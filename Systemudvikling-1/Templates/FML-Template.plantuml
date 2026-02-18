@@ -1,5 +1,5 @@
 /'
-Er der links heri som ikke længere er aktuelle, så giv mig venligst besked. 
+Er der links heri som ikke længere er aktuelle eller fejl, så giv mig venligst besked.
 lbha@ucl.dk / Systemdevelopmentguy@gmail.com
 
 Dette er en skabelon til et Forretnings Model Lærred (FML). FML er den danske version af Business Model Canvas
@@ -24,14 +24,14 @@ grafiske layout vi går efter. Det vi ønsker at fokusere på er indholdet i "ka
 Så se bort fra at om hvordan de bliver placeret. Men I må selvfølgelig gerne prøve at gøre det pænt. Men det 
 må ikke tage jeres fokus.
 
-Visual Studio Code kan formattere koden og tegne Kasserne. Det kræver at i installerer to plugins, som 
+Visual Studio Code kan formattere koden og tegne Kasserne. Det kræver at I installerer to plugins, som 
 jeg anbefaler at I installerer i denne rækkefølge
 
 1. PlantUML         - lavet af jebbs.
 2. PlantUML Viewer  - lavet at BenkoSoftware.
 
 Plugins til Visual Studio Code installeres via menuen helt til venstre under ikonet/knappen: Extensions. 
-Når du klikker på Extensions, så kommer der et søgefelt frem, hvor du kan finde de to plugins: (PlantUML, 
+Når du klikker på Extensions, så kommer der et søgefelt frem, hvor I kan finde de to plugins: (PlantUML, 
 PlantUML Viewer). Når du har fundet f.eks. PlantUML, klikker du på den i søgeresultatet. Derefter installerer
 du plugin'et ved at klikke på den blå install knap.
 
@@ -40,7 +40,7 @@ kasserne (PlantUML Viewer), så sørg for at 'Java Runtime Environment' er insta
 Du kan finde programmet her:
 https://www.java.com/en/download/manual.jsp
 
-Du behøver ikke, men er du interesseret så kan du læse mere om hvad 'Java Runtime Environment' på dette link:
+Du behøver ikke, men er du interesseret så kan du læse mere om hvad 'Java Runtime Environment' er på dette link:
 https://www.ibm.com/think/topics/jre
 
 Hvis du installerer Java Rutime Environment, så genstart lige computeren, når det er installeret. Det bør ikke 
