@@ -1,0 +1,103 @@
+/'
+Er der links heri som ikke længere er aktuelle, så giv mig venligst besked. 
+lbha@ucl.dk / Systemdevelopmentguy@gmail.com
+
+Dette er en skabelon til et Forretnings Model Lærred (FML). FML er den danske version af Business Model Canvas
+som er lavet af Alexander Osterwalder.
+Husk at vi i analysefasen gør alt hvad vi kan for at holde sprogvalget til det som vores kunde (Product Owner) 
+bruger i det daglig i deres forretning. Så undgå danglish.
+
+Generelt anvender vi i undervisningen Microsoft Visual Studio Code til at editere skabelon filerne i 
+Systemudvikling. 
+Ønsker du at bruge et andet program er du selvfølgelig velkommen til det - på eget ansvar :-)
+
+Filendelsen på de fleste filer vi anvender som templates er .plantuml (https://plantuml.com/). 
+
+I denne fil anvender vi PlantUML (Class Diagram) til at tegne FML'en. 
+Du finder en masse eksempler her: 
+https://plantuml.com/class-diagram
+
+Det er meget, meget enkelt at anvende, når man først kommer igang.
+
+Man kan gøre forskellige ting for at placere og samle klasserne, men i denne fil med FML, så det er ikke det 
+grafiske layout vi går efter. Det vi ønsker at fokusere på er indholdet i "kasserne". 
+Så se bort fra at om hvordan de bliver placeret. Men I må selvfølgelig gerne prøve at gøre det pænt. Men det 
+må ikke tage jeres fokus.
+
+Visual Studio Code kan formattere koden og tegne Kasserne. Det kræver at i installerer to plugins, som 
+jeg anbefaler at I installerer i denne rækkefølge
+
+1. PlantUML         - lavet af jebbs.
+2. PlantUML Viewer  - lavet at BenkoSoftware.
+
+Plugins til Visual Studio Code installeres via menuen helt til venstre under ikonet/knappen: Extensions. 
+Når du klikker på Extensions, så kommer der et søgefelt frem, hvor du kan finde de to plugins: (PlantUML, 
+PlantUML Viewer). Når du har fundet f.eks. PlantUML, klikker du på den i søgeresultatet. Derefter installerer
+du plugin'et ved at klikke på den blå install knap.
+
+Hvis du ikke har 'Java Runtime Environment' installeret på din computer, så kan PlantUML viewer ikke tegne
+kasserne (PlantUML Viewer), så sørg for at 'Java Runtime Environment' er installeret på din computer. 
+Du kan finde programmet her:
+https://www.java.com/en/download/manual.jsp
+
+Du behøver ikke, men er du interesseret så kan du læse mere om hvad 'Java Runtime Environment' på dette link:
+https://www.ibm.com/think/topics/jre
+
+Hvis du installerer Java Rutime Environment, så genstart lige computeren, når det er installeret. Det bør ikke 
+være nødvendigt, men nogle gange forebygger det problemer at genstarte.
+
+Når du installerer plugins i Visual Studio Code, så genstart lige Visual Studio Code, når der er installeret. 
+Det bør ikke være nødvendigt, men nogle gange forebygger det problemer at genstarte.
+
+Når du retter i PlantUML filer, så kan du gentegne (preview) ved at bruge tasterne [Alt] + [d].
+
+Kodeeksempel på Celine's Cykellapning: 
+
+@startuml
+
+package "Celine's Cykellapning"  {
+class Værditilbud {
+Lapning af cykeldæk
+}
+class Nøgleaktiviteter {
+Købe cykellapper hos leverandøren
+lappe cykel for kunden
+tage imod penge fra kunden
+Betale leverandøren for cykellapper
+Betale løn til Celine
+}
+hide circles
+}
+
+@enduml
+
+'/
+
+@startuml
+
+/' 
+Da vi ønsker at gemme vores arbejde i git, så vil vi gerne udnytte at git er linjebaseret. 
+Det giver STORE fordele for jer senere.
+
+SÅ HUSK AT SKRIVE TINGENE SEPARAT PÅ HVER SIN LINJE. 
+F.eks. 
+LAV LINJESKIFT NÅR I HAR TILFØJET: "Lappe cykel for kunden"
+OG IGEN LAV LINJESKIFT NÅR I HAR TILFØJET: "Tage imod penge fra kunden"
+'/
+package "Celine's Cykellapning"  {
+class Værditilbud {
+Lapning af cykeldæk
+}
+
+class Nøgleaktiviteter {
+Købe cykellapper hos leverandøren
+Lappe cykel for kunden
+Tage imod penge fra kunden
+Betale leverandøren for cykellapper
+Betale løn til Celine
+}
+hide circles
+}
+
+@enduml
+
